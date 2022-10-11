@@ -1,3 +1,101 @@
+/* stylelint-disable csstree/validator */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 body {
-    background-color: bisque;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+  font-size: 14px;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  white-space: normal;
+  font-family: 'Kanit', sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+.display-container {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.recent,
+.add-scores {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: fit-content;
+  padding: 0 3.5rem;
+}
+
+.recent-top,
+.add-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-top h3 {
+  font-size: 1.5rem;
+}
+
+.add-top h3 {
+  font-size: 1.5rem;
+}
+
+.refresh {
+  padding: 0.3rem 0.2rem;
+  background-color: white;
+  border: 2px solid black;
+  height: 1.7rem;
+  width: 4.2rem;
+  box-shadow: 0 0.2rem;
+  font-size: 1rem;
+}
+
+.scoreboard {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 90%;
+}
+
+.name-input,
+.score-input {
+  border: 2px solid black;
+  padding: 0.6rem 0.5rem;
+  font-size: 1rem;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.submit {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  width: 4.4rem;
+  height: 1.5rem;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 0.2rem;
 }
