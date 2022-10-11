@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Exercise</title>
+    <title>Leaderboard</title>
 <script defer src="/runtime.bundle.js"></script><script defer src="/main.bundle.js"></script></head>
 <body>
-    <h1>Hello Webpack</h1>
+    <h2>Leaderboard</h2>
+    <div class="display-container">
+        <div class="recent">
+            <div class="recent-top">
+                <h3>Recent Scores</h3>
+                <button type="button" class="refresh">Refresh</button>
+            </div>
+            <div class="scoreboard">
+                <div class="list">1</div>
+                <div class="list">2</div>
+                <div class="list">3</div>
+            </div>
+        </div>
+        <div class="add-scores">
+            <div class="add-top">
+                <h3>Add Your Score</h3>
+            </div>
+            <div class="input-section">
+                <input name="name" type="text" class="name-input" placeholder="Your Name">
+                <input type="number" name="score" placeholder="Your Score" class="score-input">
+            </div>
+            <div class="btn-flex">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
