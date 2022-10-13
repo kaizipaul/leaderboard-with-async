@@ -1,5 +1,5 @@
 import './style.css';
-import { dataPush, dataFetch } from './modules/scoreBoard.js';
+import { dataPush, dataFetch } from './modules/dataExchange.js';
 
 const refreshBtn = document.querySelector('.refresh');
 const submitBtn = document.querySelector('.submit');
