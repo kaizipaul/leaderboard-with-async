@@ -16,6 +16,7 @@ const sendData = () => {
   scoreInput.value = '';
 };
 
+// event listener for the submit button
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
   sendData();
