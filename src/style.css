@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
   white-space: normal;
   font-family: 'Kanit', sans-serif;
+  color: #33334d;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(90deg, rgba(238, 174, 202, 1) 26%, rgba(148, 187, 233, 1) 83%);
+  background-size: cover;
 }
 
 h2 {
@@ -22,17 +26,25 @@ h2 {
 
 .display-container {
   display: flex;
-  gap: 8px;
-  width: 100%;
+  gap: 12px;
+  width: 95%;
+  justify-content: space-between;
+  margin-left: 1rem;
 }
 
 .recent,
 .add-scores {
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: 50%;
-  height: fit-content;
-  padding: 0 3.5rem;
+  width: 70%;
+  min-height: fit-content;
+  padding: 0 3rem;
+  background-color: rgba(202, 173, 173, 0.4);
+  border-radius: 0.2rem;
+  z-index: 2;
+  backdrop-filter: blur(100px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -30px inset, rgba(0, 0, 0, 0.3) 0 18px 34px -25px inset;
 }
 
 .recent-top,
@@ -51,24 +63,31 @@ h2 {
 }
 
 .refresh {
-  padding: 0.3rem 0.2rem;
-  background-color: white;
-  border: 2px solid black;
-  height: 1.7rem;
-  width: 4.2rem;
-  box-shadow: 0 0.2rem;
+  border: none;
   font-size: 1rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: #3d3d5c;
+  cursor: pointer;
+  background-color: rgba(238, 174, 202, 0.5);
+  transition: transform 0.8s ease-in-out;
+}
+
+.refresh:hover {
+  background-color: rgba(238, 174, 202, 1);
+  transform: rotate(360deg);
 }
 
 .scoreboard {
   display: flex;
   flex-direction: column;
-  height: 25rem;
+  height: 20rem;
   overflow-y: auto;
   gap: 0.8rem;
   width: 100%;
-  padding: 0;
-  border: 1px solid black;
+  padding: 0 0.3rem;
+  border-radius: 0.2rem;
 }
 
 .input-section {
@@ -80,9 +99,13 @@ h2 {
 
 .name-input,
 .score-input {
-  border: 2px solid black;
+  border: none;
   padding: 0.6rem 0.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  background-color: rgba(238, 174, 202, 0.6);
+  border-radius: 0.2rem;
+  font-style: italic;
+  font-family: 'Hack', monospace;
 }
 
 .btn-flex {
@@ -94,11 +117,23 @@ h2 {
 .submit {
   margin-top: 0.8rem;
   font-size: 1rem;
-  width: 4.4rem;
-  height: 1.5rem;
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: 0 0.2rem;
+  width: 4.5rem;
+  height: 2.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(238, 174, 202, 0.6);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Kanit', sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+  letter-spacing: 1.2px;
+}
+
+.submit:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(238, 174, 202, 1);
 }
 
 .scoreboard #list-body {
@@ -109,8 +144,26 @@ h2 {
 .list {
   display: flex;
   justify-content: space-between;
+  padding: 0 0.2rem;
+  font-size: 1rem;
 }
 
 .list:nth-child(even) {
-  background-color: #e2e2e2;
+  background-color: rgba(238, 174, 202, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(238, 174, 202, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(25, 27, 29, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(25, 27, 29, 1);
 }

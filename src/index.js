@@ -31,9 +31,9 @@ const renderList = async () => {
     newList.className = 'list';
 
     const namePara = document.createElement('p');
-    namePara.textContent = `Name: ${data.user}`;
+    namePara.textContent = `name: ${data.user}`;
     const scorePara = document.createElement('p');
-    scorePara.textContent = `Score: ${data.score}`;
+    scorePara.textContent = `score: ${data.score}`;
 
     newList.appendChild(namePara);
     newList.appendChild(scorePara);
