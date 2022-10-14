@@ -1,5 +1,5 @@
-import './style.css';
 import { dataPush, dataFetch } from './modules/dataExchange.js';
+import './style.css';
 
 const refreshBtn = document.querySelector('.refresh');
 const submitBtn = document.querySelector('.submit');
