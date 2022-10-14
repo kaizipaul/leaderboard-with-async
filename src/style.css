@@ -43,7 +43,7 @@ h2 {
   background-color: rgba(202, 173, 173, 0.4);
   border-radius: 0.2rem;
   z-index: 2;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(10px);
   box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -30px inset, rgba(0, 0, 0, 0.3) 0 18px 34px -25px inset;
 }
 
@@ -166,4 +166,17 @@ h2 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(25, 27, 29, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .display-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 1.5rem;
+  }
+
+  .add-scores {
+    height: 15rem;
+  }
 }
