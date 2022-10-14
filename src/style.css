@@ -39,7 +39,7 @@ h2 {
   flex-direction: column;
   width: 70%;
   min-height: fit-content;
-  padding: 0 3rem;
+  padding: 0 2rem;
   background-color: rgba(202, 173, 173, 0.4);
   border-radius: 0.2rem;
   z-index: 2;
@@ -72,6 +72,7 @@ h2 {
   cursor: pointer;
   background-color: rgba(238, 174, 202, 0.5);
   transition: transform 0.8s ease-in-out;
+  text-align: center;
 }
 
 .refresh:hover {
