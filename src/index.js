@@ -32,12 +32,17 @@ const renderList = async () => {
     const newList = document.createElement('li');
     newList.className = 'list';
 
+    const userIcon = document.createElement('div');
+    userIcon.className = 'name-icon';
+    userIcon.innerHTML = '<i class="fa-solid fa-user"></i>';
     const namePara = document.createElement('p');
-    namePara.textContent = `name: ${data.user}`;
+    namePara.textContent = `${data.user}`;
     const scorePara = document.createElement('p');
-    scorePara.textContent = `score: ${data.score}`;
+    scorePara.className = 'score';
+    scorePara.textContent = `${data.score}`;
 
-    newList.appendChild(namePara);
+    userIcon.appendChild(namePara);
+    newList.appendChild(userIcon);
     newList.appendChild(scorePara);
     listFragment.appendChild(newList);
   });
