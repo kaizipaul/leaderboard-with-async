@@ -1,22 +1,24 @@
 /* stylelint-disable csstree/validator */
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
 
 body {
   top: 0 !important;
   left: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-  width: 100vw;
   font-size: 14px;
   max-width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
   white-space: normal;
-  font-family: 'Kanit', sans-serif;
-  color: #33334d;
-  background: rgb(238, 174, 202);
-  background: linear-gradient(90deg, rgba(238, 174, 202, 1) 26%, rgba(148, 187, 233, 1) 83%);
+  font-family: 'IBM Plex', sans-serif;
+  color: #e5dcd8;
+  background: #1f201e;
   background-size: cover;
+}
+
+.flex {
+  display: flex;
 }
 
 h2 {
@@ -24,12 +26,15 @@ h2 {
   margin-left: 1.5rem;
 }
 
+.fa-gamepad {
+  color: #0ca6b1;
+}
+
 .display-container {
-  display: flex;
-  gap: 12px;
-  width: 95%;
-  justify-content: space-between;
-  margin: 0 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
 }
 
 .recent,
@@ -40,11 +45,9 @@ h2 {
   width: 70%;
   min-height: fit-content;
   padding: 0 2rem;
-  background-color: rgba(202, 173, 173, 0.4);
   border-radius: 0.2rem;
   z-index: 2;
   backdrop-filter: blur(10px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -30px inset, rgba(0, 0, 0, 0.3) 0 18px 34px -25px inset;
 }
 
 .recent-top,
@@ -52,6 +55,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 96%;
 }
 
 .recent-top h3 {
@@ -69,16 +73,17 @@ h2 {
   border-radius: 50%;
   width: 2.6rem;
   height: 2.6rem;
-  color: #3d3d5c;
+  color: #e5dcd8;
   cursor: pointer;
-  background-color: rgba(238, 174, 202, 0.5);
+  background-color: #4b4c4a;
   transition: transform 0.8s ease-in-out;
   text-align: center;
+  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
 }
 
 .refresh:hover {
-  background-color: rgba(238, 174, 202, 1);
-  transform: rotate(360deg);
+  background-color: #6e6f6e;
+  transform: rotate(180deg);
 }
 
 .scoreboard {
@@ -93,65 +98,67 @@ h2 {
 }
 
 .input-section {
-  display: flex;
-  flex-direction: column;
   gap: 0.8rem;
-  width: 90%;
+  width: 95%;
+  align-items: center;
 }
 
 .name-input,
 .score-input {
   border: none;
-  padding: 0.6rem 0.5rem;
+  padding: 1rem 1rem;
   font-size: 0.9rem;
-  background-color: rgba(238, 174, 202, 0.6);
+  background-color: #4b4c4a;
   border-radius: 0.2rem;
-  font-style: italic;
+  width: 60%;
   font-family: 'Hack', monospace;
-}
-
-.btn-flex {
-  display: flex;
-  justify-content: flex-end;
-  width: 90%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
 }
 
 .submit {
-  margin-top: 0.8rem;
   font-size: 1rem;
-  width: 4.5rem;
-  height: 2.25rem;
-  padding: 0 0.5rem;
-  background-color: rgba(238, 174, 202, 0.6);
+  padding: 0.8rem;
+  border-radius: 0.2rem;
   border: none;
-  border-radius: 8px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  font-family: 'Kanit', sans-serif;
   cursor: pointer;
-  transition: box-shadow 0.3s ease-in;
-  transition: background-color 0.3s ease-in;
-  letter-spacing: 1.2px;
-}
-
-.submit:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  background-color: rgba(238, 174, 202, 1);
+  color: #e5dcd8;
+  background-color: #0ca6b1;
+  width: 6rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
 }
 
 .scoreboard #list-body {
   list-style: none;
   padding: 0;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .list {
   display: flex;
   justify-content: space-between;
-  padding: 0 0.2rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
+  background-color: #4b4c4a;
+  border-radius: 0.5rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
 }
 
-.list:nth-child(even) {
-  background-color: rgba(238, 174, 202, 0.5);
+.fa-user {
+  font-size: 1.5rem;
+  color: #0ca6b1;
+}
+
+.name-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #0ca6b1;
 }
 
 ::-webkit-scrollbar {
@@ -159,15 +166,16 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(238, 174, 202, 0.6);
+  background: #1f201e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(25, 27, 29, 0.6);
+  background: #4b4c4a;
+  border-radius: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(25, 27, 29, 1);
+  background: #6e6f6e;
 }
 
 @media screen and (max-width: 768px) {
@@ -180,6 +188,16 @@ h2 {
     flex-direction: column;
     gap: 10px;
     margin: 0 1rem;
+    width: 100%;
+  }
+
+  .input-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .name-input,
+  .score-input {
     width: 100%;
   }
 
