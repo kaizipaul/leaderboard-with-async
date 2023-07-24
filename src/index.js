@@ -6,6 +6,7 @@ const submitBtn = document.querySelector('.submit');
 const nameInput = document.getElementById('name');
 const scoreInput = document.getElementById('score');
 
+// create a function that collects data from the input fields and sends them to the API via POST
 const sendData = () => {
   const scoreData = {
     user: nameInput.value,
@@ -22,6 +23,7 @@ submitBtn.addEventListener('click', (e) => {
   sendData();
 });
 
+// render the list from data fetched from the API
 const renderList = async () => {
   const data = await dataFetch();
   const scoreList = document.getElementById('list-body');
@@ -42,12 +44,14 @@ const renderList = async () => {
   scoreList.appendChild(listFragment);
 };
 
+// refresh the list after adding data
 refreshBtn.addEventListener('click', () => {
   renderList();
   const scoreList = document.getElementById('list-body');
   scoreList.innerHTML = '';
 });
 
+// render the list when the page is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   renderList();
 });
