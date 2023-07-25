@@ -7,14 +7,10 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   font-size: 14px;
-  max-width: 100vw;
   box-sizing: border-box;
-  overflow-x: hidden;
-  white-space: normal;
   font-family: 'IBM Plex', sans-serif;
   color: #e5dcd8;
   background: #1f201e;
-  background-size: cover;
 }
 
 .flex {
@@ -23,7 +19,7 @@ body {
 
 h2 {
   font-size: 3rem;
-  margin-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .fa-gamepad {
@@ -55,7 +51,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 96%;
 }
 
 .recent-top h3 {
@@ -107,10 +102,11 @@ h2 {
 .score-input {
   border: none;
   padding: 1rem 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   background-color: #4b4c4a;
   border-radius: 0.2rem;
   width: 60%;
+  color: #0ca6b1;
   font-family: 'Hack', monospace;
   box-shadow: rgba(6, 24, 44, 0.4) 0 0 0 2px, rgba(6, 24, 44, 0.65) 0 4px 6px -1px, rgba(255, 255, 255, 0.08) 0 1px 0 inset;
 }
