@@ -3,7 +3,7 @@
 # Leaderboard
 
 > This is a leaderboard project where async JavaScript is demonstrated.
-> Feel free to test it [HERE](https://kaizipaul.github.io/leaderboard-with-async/)
+> Feel free to test it [Here](https://kaizipaul.github.io/leaderboard-with-async/)
 
 
 ## Built With
@@ -16,6 +16,9 @@
 ## Live Demo
 
 [Live Demo Link](https://kaizipaul.github.io/leaderboard-with-async/)
+
+## App Screenshot
+![app-screenshot](src/assets/leaderboard.png)
 
 ## Authors
 
